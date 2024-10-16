@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 80%;
+    background-color: white;
+    background-image: url('../images/chine.jpg');
+    background-size: cover;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ff0000
+}
+
+main {
+    color: rgb(15, 224, 50);
+    width: 50%;
+    background-color: transparent;
+    margin: auto;
+    height: 100vh;
+    font-family: monospace
+}
