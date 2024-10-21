@@ -1,119 +1,211 @@
-:root{
-    --couleur-fond: #02131b;
-    --couleur-text: white;
-    --couleur-surlignée: #37806c;
-    --couleur-fondbis: #11b382;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 body {
-    background-color: var(--couleur-fond);
-}
-
-@font-face {
-    font-family: Yeseva;
-    src: url(../fonts/YesevaOne-Regular.ttf);
+    font-family: 'Montserrat', sans-serif;
+    background-color: #01080c;
 }
 
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-.titre{
-    color: white;
-}
-
-#point{
-    color:white;
-}
-
-.div2{
-    text-align: right;
-    margin-top: 16px;
-}
-
-.headright {
+    padding: 16px;
     text-align: right;
 }
 
-.headright i {
-    padding: 6px;
-    margin-top: 15 px;
-}
-
-p {
-    font-family: Yesava;
+header p {
+    text-align: left;
     color: white;
+    font-size: 20px;
+    font-family: 'Yeseva One', sans-serif;
 }
 
-#hello{
-    font-size: 39px;
-}
-
-#vert{
-    color: var(--couleur-fondbis)
-}
-
-#crédits, #fin {
-    color:grey;
-    text-align: center;
-    font-size: 10px;
-} 
-
-#fin {
-    font-size: 7px;
-}
-
-#texte {
-    color: grey;
-    font-size: 10px;
+hr {
+    color: rgb(63, 58, 58);
 }
 
 main {
-    padding-top: 30px;
-    margin: 0 9%;
+    padding-top: 65px;
+    font-family: 'Montserrat';
+}
+
+h1 {
+    color: white;
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 25px;
 }
 
 main #main-text {
     font-size: 15px;
-    text-align: left;
-    width: 805px;
-    color: #4a5e66;
-}
-
-.parent-main-text {
-    padding-bottom: 9vh;
-}
-
-main u1 {
+    color: #5f615b;
     display: flex;
     flex-wrap: wrap;
-    list-style-type: none;
-    color: var(--couleur-text);
-    font-size: 16px;
-    align-items: center;
+}
+
+main ul {
+    margin: auto;
     text-align: center;
-    justify-content: center;
-    margin-left: 32px;
+}
+
+main ul span {
+    background-color: #0cd39b;
 }
 
 main li {
-    margin-right: 35px;
+    background-color: #01080c;
+    color:white;
+    border: none;
+    font-weight: lighter;
+    padding: 0.5em;
+}
+
+.div1 {
+    padding: 8px;
+    margin: 0;
+}
+
+.div1 #point {
+    color: #0cd39b
+}
+
+.div2 {
+    margin-left: 25px;
+    font-size: 18px;
+}
+
+#highlight {
+    color:#0cd39b;
+}
+
+li {
+    display: inline;
+    color: white;
+    font-size: 15px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 425px) {
+    .grid img {
+      display: none;
+    }
+  
+    .grid img:nth-child(-n+9) {
+      display: block;
+    }
+  }
+
+/*ordinateur*/
+@media screen and (min-width: 1024px) {
+
+  main h2,
+  main p {
+    width: 60%;
+  }
+
+  main nav button {
+    font-size: 1em;
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*tablette*/
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(5, 1fr); /*5colone*/
+      grid-gap: 0.5em;
+    }
+  
+    .grid img {
+      display: none; 
+    }
+  
+    .grid img:nth-child(-n+15) {/* Affiche les 15premier im*/
+      display: block; 
+    }
+  }
+  
+header h1 span {
+    color: var(--couleur-surlignée)
+}
+
+header nav {
     text-align: center;
 }
 
-.menu-parent {
+header nav i {
+    margin: 1em 0.5em;
+}
+
+header nav a {
+    color: var(white);
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    padding-top: 3em;
+}
+
+main h2 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 2em;
+}
+
+main h2 span {
+    color: var(--couleur-prem);
+}
+
+main p {
+    font-weight: lighter;
+    margin: 2em 0px;
+}
+
+main nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
 }
 
-.menu-highlight { 
+main nav button {
+    background-color: var(--couleur-fond);
+    color: var(white);
+    border: none;
+    letter-spacing: 0.25em;
+    font-weight: lighter;
+    font-size: 0.5em;
+    padding: 0.5em;
+}
+
+main nav button:nth-child(2) {
     background-color: var(--couleur-surlignée);
-    padding: 5px;
 }
 
-hr {
-    color: grey;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5em;
 }
+
+.grid img {
+    width: 100%;
+    object-fit: cover ;
+}
+
+.grid img:nth-child(n + 10) {
+    display: none;
+  }
+  
+footer {
+    text-align: center;
+    margin-top: 4em;
+    color: var(--couleur-text);
+    font-weight: 100;
+  }
+  
