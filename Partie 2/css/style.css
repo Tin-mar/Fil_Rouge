@@ -1,75 +1,119 @@
+:root{
+    --couleur-fond: #02131b;
+    --couleur-text: white;
+    --couleur-surlignée: #37806c;
+    --couleur-fondbis: #11b382;
+}
+
 body {
-    padding: 0;
+    background-color: var(--couleur-fond);
+}
+
+@font-face {
+    font-family: Yeseva;
+    src: url(../fonts/YesevaOne-Regular.ttf);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.titre{
+    color: white;
+}
+
+#point{
+    color:white;
+}
+
+.div2{
+    text-align: right;
+    margin-top: 16px;
+}
+
+.headright {
+    text-align: right;
+}
+
+.headright i {
+    padding: 6px;
+    margin-top: 15 px;
+}
+
+p {
+    font-family: Yesava;
+    color: white;
+}
+
+#hello{
+    font-size: 39px;
+}
+
+#vert{
+    color: var(--couleur-fondbis)
+}
+
+#crédits, #fin {
+    color:grey;
     text-align: center;
-    width: 80%;
-    background-color: #0e2a3d;
-    margin: auto;
-    color: #ffffff
+    font-size: 10px;
+} 
+
+#fin {
+    font-size: 7px;
 }
-h2 {
-    font-family: "Montserrat", sans-serif;
+
+#texte {
+    color: grey;
+    font-size: 10px;
 }
+
 main {
-    color: rgb(255, 255, 255);
-    width: 50%;
-    background-color: transparent;
-    font-family: "Yeseva One", serif;
-    font-weight: 200;
-    font-style: normal;
-    margin: auto;
-    height: 100vh;
+    padding-top: 30px;
+    margin: 0 9%;
 }
 
-.yeseva-one-regular {
-    font-family: "Yeseva One", serif;
-    font-weight: 200;
-    font-style: normal;
-  }
+main #main-text {
+    font-size: 15px;
+    text-align: left;
+    width: 805px;
+    color: #4a5e66;
+}
 
-.montserrat-greg {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-  }
+.parent-main-text {
+    padding-bottom: 9vh;
+}
 
-nav {
-    background-color: #0f2d42;
-    padding: 10px 0;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-  }
+main u1 {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    color: var(--couleur-text);
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 32px;
+}
 
-nav ul {
-    color: #ffffff;
-    list-style: none;
+main li {
+    margin-right: 35px;
+    text-align: center;
+}
+
+.menu-parent {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-a {
-    text-decoration: none;
-    font-weight: 400;
+.menu-highlight { 
+    background-color: var(--couleur-surlignée);
+    padding: 5px;
 }
 
-a:visited {
-    color: #ebdc0c
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 100%;
-        background-color: #f1f1f1;
-    }
-    h1 {
-        font-size: 24px; 
-    }
+hr {
+    color: grey;
 }
