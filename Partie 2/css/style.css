@@ -3,17 +3,15 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #01080c;
-    margin: 1em 0.5em;
     padding: 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1.5em 0;
+    padding:0;
     align-items: center;
     border-bottom: 1px solid #808080;
-    margin: 1em 0.5em;
 }
 
 header p {
@@ -35,15 +33,15 @@ main {
 main h1 {
     color: white;
     font-family: 'Yeseva One', sans-serif;
-    font-size: 2em;
+    font-size: 3em;
 }
-
 
 main #main-text {
     font-size: 15px;
-    color: #5f615b;
+    color: #858880;
     display: flex;
     flex-wrap: wrap;
+    font-weight: lighter;
 }
 
 main ul {
@@ -112,46 +110,24 @@ footer {
     font-size: 10px;
 }
 
-
-
-@media screen and (max-width: 425px) {
-    .grid img {
-      display: none;
-    }
+@media only screen and (max-width: 768px) {
   
-    .grid img:nth-child(-n+9) {
-      display: block;
-    }
+  main h1 .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2px;
+    width: 79vw;
+    height: auto;
+    column-gap: 6px;
   }
+  
+  .image { 
+    display: none; 
+  } 
 
-/*ordinateur*/
-@media screen and (min-width: 1024px) {
+  .image:nth-child(-n+9) { 
+    display: block; 
+  } 
 
-  main h2,
-  main p {
-    width: 60%;
-  }
-
-  main nav button {
-    font-size: 1em;
-  }
-
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
-/*tablette*/
-@media screen and (min-width: 426px) and (max-width: 768px) {
-    .grid {
-      grid-template-columns: repeat(5, 1fr); /*5colone*/
-      grid-gap: 0.5em;
-    }
-  
-    .grid img {
-      display: none; 
-    }
-  
-    .grid img:nth-child(-n+15) {/* Affiche les 15premier im*/
-      display: block; 
-    }
-  }
