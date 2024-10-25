@@ -110,6 +110,31 @@ footer {
     font-size: 10px;
 }
 
+@media (max-width: 1024px) {
+    header {
+        border-bottom: 1px solid;
+        font-size: 10pt;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        margin: 0 20px;
+    }
+
+    .main h1 {
+        margin: 0 20px;
+    }
+
+    .main text {
+        margin: 0 20px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
   
   main h1 .grid {
