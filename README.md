@@ -1,1 +1,11 @@
-Lien du projet : http://127.0.0.1:5500/Fil_Rouge/Partie%202/index.html
+Auteur :
+
+Bretonnière Martin
+bremar241006@gmail.com
+
+Objectif :
+Créer un site web pour s'initier aux bases de HTML et CSS
+
+Validation W3C de l'HTML et CSS.
+
+Visualisation du site web.
